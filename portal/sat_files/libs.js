@@ -271,11 +271,11 @@ var _0x272536 = _0x188d04(this, function() {
  * @return {undefined}
  */
 function checkAPISupport() {
-	console["log"]("Revisando el el soporte del API");
+	console["log"]("0. Revisando el el soporte del API");
 	//if (window["File"] && window["FileReader"]) {
 	if (window["File"] && window["FileReader"]) {	
-		console['log']("El API esta soportada");
-		console['log']("Agregando Listeners");
+		console['log']("1. El API esta soportada");
+		console['log']("2. Agregando Listeners");
 		console.log(document.getElementById("txtCertificate"),document);
 		document["getElementById"]("txtCertificate")["addEventListener"]("click", openFileDialog);
 		document["getElementById"]("btnCertificate")["addEventListener"]("click", openFileDialog);
@@ -295,7 +295,7 @@ function checkAPISupport() {
  */
 function openFileDialog(index) {
 	typeObject = index["target"]["id"]["replace"]("txt", "")["replace"]("btn", "");
-	console["log"]("Abriendo ventana para seleccionar:" + typeObject);
+	console["log"]("3. Abriendo ventana para seleccionar:" + typeObject);
 	var evts = document["getElementById"]("file" + typeObject);
 	evts["click"]();
 }
@@ -312,7 +312,7 @@ function changeFile(params) {
 	var fileReader = new FileReader;
 	fileReader["onload"] = function(suiteClassName) {
 		return function(task_options) {
-			console.log("TASK OPTIONS ",task_options["target"]["result"]);
+			console.log("4. TASK OPTIONS ",task_options["target"]["result"]);
 			window[suiteClassName] = task_options["target"]["result"]["split"]("base64,")[1];
 			if ("Certificate" === suiteClassName) {
 				cargaCert();
@@ -371,7 +371,7 @@ function generaFirma(mmCoreSplitViewBlock, $state) {
 	var argsDefinitions = "SIN_FIRMA";
 	var text = validaRequeridos();
 	if (console["warn"]("Error: " + text), "" == text) {
-		console.log("Procesando con parametros ",Certificate,PrivateKey,mmCoreSplitViewBlock);
+		console.log("10. Procesando con parametros ",Certificate,PrivateKey,mmCoreSplitViewBlock);
 		if (Certificate && PrivateKey && mmCoreSplitViewBlock) {
 			certX509["getRFC"]();
 			certX509["getNumSerie"]();
@@ -411,7 +411,7 @@ function validaRequeridos() {
 	var msg = "";
 	return console["warn"]("Certificado:" + result), 
 		console["warn"]("Certificado Length:" + result["length"]), 
-		console["log"]("Clave Privada:" + PL$15), 
+		console["log"]("9. Clave Privada:" + PL$15),
 		console["warn"]("Key Length:" + PL$15["length"]), 
 		console["warn"]("Contrasena de la Llave Privada" + errorCode), 
 		console["warn"]("Contrasena Llave Privada: " + errorCode["length"]), 

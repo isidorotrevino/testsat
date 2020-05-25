@@ -250,11 +250,11 @@ td, th {
     background-color: #fff
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Glyphicons Halflings';
     src: url(./fonts/glyphicons-halflings-regular.eot);
     src: url(./fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(./fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(./fonts/glyphicons-halflings-regular.woff) format("woff"), url(./fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
-}
+} */
 
 .glyphicon {
     position: relative;
@@ -5210,7 +5210,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 }
 
 .media, .media-body {
-    zoom: 1;
     overflow: hidden
 }
 
@@ -6684,13 +6683,13 @@ button.close {
     display: block
 }
 
-@font-face {
+/* @font-face {
     font-family: icogobmx;
     src: url(fonts/icogobmx.eot?xc1rry);
     src: url(fonts/icogobmx.eot?#iefixxc1rry) format("embedded-opentype"), url(fonts/icogobmx.woff?xc1rry) format("woff"), url(fonts/icogobmx.ttf?xc1rry) format("truetype"), url(fonts/icogobmx.svg?xc1rry#icogobmx) format("svg");
     font-weight: 400;
     font-style: normal
-}
+} */
 
 [class*=" icon-"], [class^=icon-] {
     font-family: icogobmx;
